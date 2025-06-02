@@ -1,0 +1,100 @@
+/* General page setup */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #f5f6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Authentication container */
+#auth-container {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  width: 320px;
+}
+
+#auth-container h2 {
+  font-size: 24px;
+  color: #2f3542;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+/* Sign Up button */
+#signup-btn {
+  background-color: #1dd1a1;
+  color: white;
+}
+
+#signup-btn:hover {
+  background-color: #10ac84;
+}
+
+/* Login button */
+#login-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+#login-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Logout button */
+#logout-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+#logout-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Chart container */
+#chart-container {
+  width: 700px;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Canvas Styling */
+canvas {
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  display: block;
+  margin: auto;
+}

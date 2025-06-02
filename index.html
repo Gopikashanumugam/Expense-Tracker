@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+<script>
+  document.getElementById("logout-btn").addEventListener("click", function () {
+    auth.signOut().then(() => {
+      window.location.href = "login.html"; // Redirect to login after logout
+    });
+  });
+</script>
+
+   <div class="finediv">
+    <div class="container">
+      <div class="ledger">
+        <h2>Income Expense Tracker</h2>
+        <h4>Your Balance</h4>
+        <h1 id="balance">₹ 0.00</h1>
+        <div class="inc-exp-container">
+          <div class="inc">
+            <h4>Income</h4>
+            <p id="inc-amt" class="amt plus">₹ 0.00</p>
+          </div>
+          <div class="exp">
+            <h4>Expense</h4>
+            <p id="exp-amt" class="amt minus">₹ 0.00</p>
+          </div>
+        </div>
+        <form action="#" id="form">
+          <div class="form-control">
+            <label for="desc">Description</label>
+            <input type="text" name="desc" id="desc" placeholder="Enter Description" />
+          </div>
+
+          <div class="form-control">
+            <label for="amount">Amount</label>
+            <input type="number" name="amount" id="amount" placeholder="Amount" />
+          </div>
+          <button class="btn" type="submit">Add Transaction</button>
+        </form>
+      </div>
+      <div class="transaction">
+        <h3>Transaction Details</h3>
+        <ul class="trans" id="trans">
+            <li class="inc">
+            Salary
+            <span></span>
+            <button class="btn-del">x</button>
+          </li>
+          <li class="exp">
+            Insurance
+            <span></span>
+            <button class="btn-del">x</button>
+          </li>
+           <li class="exp">
+            Rent
+            <span></span>
+            <button class="btn-del">x</button>
+          </li>
+          <li class="exp">
+            Grocery
+            <span></span>
+            <button class="btn-del">x</button>
+          </li>
+          <li class="exp">
+            Medicine
+            <span></span>
+            <button class="btn-del">x</button>
+          </li>
+          <li class="exp">
+            Others
+            <span></span>
+            <button class="btn-del">x</button>
+          </li>
+        </ul>
+      </div>
+      
+
+    </div>
+    </div>
+    <div><canvas id="expenseChart"></canvas>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <script src="script.js"></script>
+
+  </body>
+</html>
